@@ -1,0 +1,8 @@
+[package]
+name = "aps-templates"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+aps = { git = "https://github.com/earth-metabolome-initiative/asset-procedure-schema" }
+aps-test-utils = { git = "https://github.com/earth-metabolome-initiative/asset-procedure-schema"}
