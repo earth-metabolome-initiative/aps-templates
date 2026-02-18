@@ -1,6 +1,7 @@
 //! Submodule initializing trackable categories.
 
-// pub mod bead;
+pub mod bead;
+pub use bead::*;
 // pub mod compatibility_rules;
 pub mod containers;
 pub use containers::*;
@@ -11,7 +12,8 @@ pub use markers::*;
 // pub mod organisms;
 pub mod photographs;
 pub use photographs::*;
-// pub mod panels;
+pub mod panels;
+pub use panels::*;
 pub mod ppe;
 pub use ppe::*;
 // pub mod reagent_models;
