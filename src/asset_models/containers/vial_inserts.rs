@@ -1,0 +1,70 @@
+//! Submodule to initialize vial insert models in the database.
+
+use crate::prelude::reference_namespace;
+use aps::aps_namespaced_ownables::*;
+use aps::aps_namespaces::*;
+use aps::aps_ownables::*;
+use aps::aps_users::User;
+use aps::aps_users::*;
+use aps::aps_volumetric_container_models::*;
+use diesel_builders::{BuilderError, TableBuilder, prelude::*};
+
+/// Returns the vial insert 200μl model, creating it if it does not exist.
+///
+/// # Example
+///
+/// ```rust
+/// use aps_test_utils::{aps_git_conn, user};
+/// use aps_templates::prelude::*;
+/// let mut conn = aps_git_conn();
+///
+/// let test_user = user(&mut conn);
+/// let insert1 = vial_insert_200ul(&test_user, &mut conn).expect("Failed to create vial insert model");
+/// let insert2 = vial_insert_200ul(&test_user, &mut conn).expect("Failed to create vial insert model");
+/// assert_eq!(insert1, insert2);
+/// ```
+pub fn vial_insert_200ul<C>(
+    user: &User,
+    conn: &mut C,
+) -> Result<
+    NestedModel<volumetric_container_models::table>,
+    BuilderError<validation_errors::ValidationError>,
+>
+where
+    TableBuilder<volumetric_container_models::table>: Insert<C>,
+    TableBuilder<namespaces::table>: Insert<C>,
+    (namespaces::name,): LoadNestedFirst<namespaces::table, C>,
+    (
+        namespaced_ownables::namespace_id,
+        (namespaced_ownables::name,),
+    ): LoadNestedFirst<volumetric_container_models::table, C>,
+{
+    const VIAL_INSERT_200UL_NAME: &str = "Vial Insert 200μl";
+
+    let reference_namespace = reference_namespace(user, conn)?;
+    if let Ok(existing) = <(
+        namespaced_ownables::namespace_id,
+        (namespaced_ownables::name,),
+    )>::load_nested_first(
+        (
+            reference_namespace.get_column::<namespaces::id>(),
+            (VIAL_INSERT_200UL_NAME,),
+        ),
+        conn,
+    ) {
+        return Ok(existing);
+    }
+
+    volumetric_container_models::table::builder()
+        .try_name(VIAL_INSERT_200UL_NAME)
+        .expect("Failed to set volumetric container model name")
+        .try_description("Vial insert of 200μl, used to hold samples in vials.")
+        .expect("Failed to set volumetric container model description")
+        .try_volume(0.0002_f32)
+        .expect("Failed to set volumetric container model volume")
+        .creator_id(user.get_column::<users::id>())
+        .editor_id(user.get_column::<users::id>())
+        .owner_id(user.get_column::<users::id>())
+        .namespace_id(reference_namespace.get_column::<namespaces::id>())
+        .insert_nested(conn)
+}
