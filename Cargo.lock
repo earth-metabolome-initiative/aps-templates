@@ -26,7 +26,7 @@ checksum = "5f0e0fee31ef5ed1ba1316088939cea399010ed7731dba877ed44aeb407a75ea"
 [[package]]
 name = "aps"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-aliquoting_procedure_templates",
  "aps-aliquoting_procedures",
@@ -124,7 +124,6 @@ dependencies = [
  "aps-photograph_procedure_templates",
  "aps-photograph_procedures",
  "aps-photographs",
- "aps-physical_asset_model_lifecycle_classes",
  "aps-physical_asset_models",
  "aps-physical_assets",
  "aps-pipette_tip_models",
@@ -165,7 +164,7 @@ dependencies = [
 [[package]]
 name = "aps-aliquoting_procedure_templates"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "aps-namespaced_ownables",
@@ -185,7 +184,7 @@ dependencies = [
 [[package]]
 name = "aps-aliquoting_procedures"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-aliquoting_procedure_templates",
  "aps-entities",
@@ -207,7 +206,7 @@ dependencies = [
 [[package]]
 name = "aps-asset_compatibility_rules"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -222,7 +221,7 @@ dependencies = [
 [[package]]
 name = "aps-asset_model_ancestors"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "diesel",
@@ -234,7 +233,7 @@ dependencies = [
 [[package]]
 name = "aps-asset_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "aps-namespaced_ownables",
@@ -249,7 +248,7 @@ dependencies = [
 [[package]]
 name = "aps-assets"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -265,7 +264,7 @@ dependencies = [
 [[package]]
 name = "aps-ball_mill_machine_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_product_lots",
@@ -284,7 +283,7 @@ dependencies = [
 [[package]]
 name = "aps-ball_mill_machines"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-commercial_ball_mill_machine_lots",
@@ -302,7 +301,7 @@ dependencies = [
 [[package]]
 name = "aps-ball_mill_procedure_templates"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_compatibility_rules",
  "aps-ball_mill_machine_models",
@@ -324,7 +323,7 @@ dependencies = [
 [[package]]
 name = "aps-ball_mill_procedures"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_compatibility_rules",
  "aps-assets",
@@ -350,7 +349,7 @@ dependencies = [
 [[package]]
 name = "aps-bead_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -367,7 +366,7 @@ dependencies = [
 [[package]]
 name = "aps-brands"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "aps-ownables",
@@ -381,7 +380,7 @@ dependencies = [
 [[package]]
 name = "aps-camera_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_geopositioning_device_lots",
@@ -403,7 +402,7 @@ dependencies = [
 [[package]]
 name = "aps-cameras"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-commercial_camera_lots",
@@ -422,7 +421,7 @@ dependencies = [
 [[package]]
 name = "aps-centrifuge_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_product_lots",
@@ -441,7 +440,7 @@ dependencies = [
 [[package]]
 name = "aps-centrifuge_procedure_templates"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_compatibility_rules",
  "aps-centrifuge_models",
@@ -462,7 +461,7 @@ dependencies = [
 [[package]]
 name = "aps-centrifuge_procedures"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_compatibility_rules",
  "aps-assets",
@@ -487,7 +486,7 @@ dependencies = [
 [[package]]
 name = "aps-centrifuges"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-commercial_centrifuge_lots",
@@ -505,7 +504,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_ball_mill_machine_lots"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-ball_mill_machine_models",
@@ -525,7 +524,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_ball_mill_machine_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-ball_mill_machine_models",
@@ -544,7 +543,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_camera_lots"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-camera_models",
@@ -566,7 +565,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_camera_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-camera_models",
@@ -587,7 +586,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_centrifuge_lots"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-centrifuge_models",
@@ -607,7 +606,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_centrifuge_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-centrifuge_models",
@@ -626,7 +625,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_freeze_dryer_lots"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_freeze_dryer_models",
@@ -646,7 +645,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_freeze_dryer_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_products",
@@ -665,7 +664,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_freezer_lots"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_freezer_models",
@@ -685,7 +684,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_freezer_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_products",
@@ -704,7 +703,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_geopositioning_device_lots"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_geopositioning_device_models",
@@ -724,7 +723,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_geopositioning_device_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_products",
@@ -743,7 +742,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_marker_lots"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_marker_models",
@@ -763,7 +762,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_marker_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_products",
@@ -782,7 +781,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_mass_spectrometer_lots"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_mass_spectrometer_models",
@@ -802,7 +801,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_mass_spectrometer_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_products",
@@ -821,7 +820,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_personal_protective_equipment_lots"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_personal_protective_equipment_models",
@@ -841,7 +840,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_personal_protective_equipment_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_products",
@@ -860,7 +859,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_phone_device_lots"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-camera_models",
@@ -882,7 +881,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_phone_device_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-camera_models",
@@ -904,7 +903,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_pipette_tip_lots"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_pipette_tip_models",
@@ -924,7 +923,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_pipette_tip_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_products",
@@ -943,7 +942,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_product_lots"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_products",
@@ -970,7 +969,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_products"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-brands",
@@ -997,7 +996,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_volume_measuring_device_lots"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_product_lots",
@@ -1017,7 +1016,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_volume_measuring_device_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_products",
@@ -1036,7 +1035,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_weighing_device_lots"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_product_lots",
@@ -1056,7 +1055,7 @@ dependencies = [
 [[package]]
 name = "aps-commercial_weighing_device_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-commercial_products",
@@ -1075,7 +1074,7 @@ dependencies = [
 [[package]]
 name = "aps-container_compatibility_rules"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-container_models",
  "aps-entities",
@@ -1091,7 +1090,7 @@ dependencies = [
 [[package]]
 name = "aps-container_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -1108,7 +1107,7 @@ dependencies = [
 [[package]]
 name = "aps-container_sealer_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -1125,7 +1124,7 @@ dependencies = [
 [[package]]
 name = "aps-container_sealing_procedure_templates"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_compatibility_rules",
  "aps-container_sealer_models",
@@ -1146,7 +1145,7 @@ dependencies = [
 [[package]]
 name = "aps-container_sealing_procedures"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_compatibility_rules",
  "aps-assets",
@@ -1170,7 +1169,7 @@ dependencies = [
 [[package]]
 name = "aps-containers"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-container_models",
@@ -1188,7 +1187,7 @@ dependencies = [
 [[package]]
 name = "aps-digital_asset_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -1204,7 +1203,7 @@ dependencies = [
 [[package]]
 name = "aps-digital_assets"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-digital_asset_models",
@@ -1221,7 +1220,7 @@ dependencies = [
 [[package]]
 name = "aps-disposal_procedure_templates"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "aps-namespaced_ownables",
@@ -1240,7 +1239,7 @@ dependencies = [
 [[package]]
 name = "aps-disposal_procedures"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-disposal_procedure_templates",
@@ -1262,7 +1261,7 @@ dependencies = [
 [[package]]
 name = "aps-entities"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-roles",
  "aps-table_names",
@@ -1277,7 +1276,7 @@ dependencies = [
 [[package]]
 name = "aps-fractioning_procedure_templates"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "aps-namespaced_ownables",
@@ -1297,7 +1296,7 @@ dependencies = [
 [[package]]
 name = "aps-fractioning_procedures"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-entities",
@@ -1321,7 +1320,7 @@ dependencies = [
 [[package]]
 name = "aps-freeze_dryer_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -1338,7 +1337,7 @@ dependencies = [
 [[package]]
 name = "aps-freeze_dryers"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-commercial_freeze_dryer_lots",
@@ -1356,7 +1355,7 @@ dependencies = [
 [[package]]
 name = "aps-freeze_drying_procedure_templates"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_compatibility_rules",
  "aps-entities",
@@ -1377,7 +1376,7 @@ dependencies = [
 [[package]]
 name = "aps-freeze_drying_procedures"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_compatibility_rules",
  "aps-assets",
@@ -1402,7 +1401,7 @@ dependencies = [
 [[package]]
 name = "aps-freezer_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -1419,7 +1418,7 @@ dependencies = [
 [[package]]
 name = "aps-freezers"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-commercial_freezer_lots",
@@ -1437,7 +1436,7 @@ dependencies = [
 [[package]]
 name = "aps-freezing_procedure_templates"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_compatibility_rules",
  "aps-entities",
@@ -1458,7 +1457,7 @@ dependencies = [
 [[package]]
 name = "aps-freezing_procedures"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_compatibility_rules",
  "aps-assets",
@@ -1483,7 +1482,7 @@ dependencies = [
 [[package]]
 name = "aps-geopositioning_device_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -1500,7 +1499,7 @@ dependencies = [
 [[package]]
 name = "aps-geopositioning_devices"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-commercial_geopositioning_device_lots",
@@ -1518,7 +1517,7 @@ dependencies = [
 [[package]]
 name = "aps-geopositioning_procedure_templates"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "aps-geopositioning_device_models",
@@ -1538,7 +1537,7 @@ dependencies = [
 [[package]]
 name = "aps-geopositioning_procedures"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-entities",
@@ -1563,7 +1562,7 @@ dependencies = [
 [[package]]
 name = "aps-harvesting_procedure_templates"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "aps-namespaced_ownables",
@@ -1583,7 +1582,7 @@ dependencies = [
 [[package]]
 name = "aps-harvesting_procedures"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-entities",
@@ -1607,7 +1606,7 @@ dependencies = [
 [[package]]
 name = "aps-marker_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -1624,7 +1623,7 @@ dependencies = [
 [[package]]
 name = "aps-markers"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-entities",
@@ -1642,7 +1641,7 @@ dependencies = [
 [[package]]
 name = "aps-mass_spectrometer_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -1659,7 +1658,7 @@ dependencies = [
 [[package]]
 name = "aps-mass_spectrometers"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-commercial_mass_spectrometer_lots",
@@ -1677,7 +1676,7 @@ dependencies = [
 [[package]]
 name = "aps-namespaced_ownables"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "aps-namespaces",
@@ -1692,7 +1691,7 @@ dependencies = [
 [[package]]
 name = "aps-namespaces"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "aps-ownables",
@@ -1706,7 +1705,7 @@ dependencies = [
 [[package]]
 name = "aps-next_procedure_templates"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "aps-ownables",
@@ -1722,7 +1721,7 @@ dependencies = [
 [[package]]
 name = "aps-ownables"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "aps-owners",
@@ -1737,7 +1736,7 @@ dependencies = [
 [[package]]
 name = "aps-owner_grants"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-owners",
  "aps-roles",
@@ -1751,7 +1750,7 @@ dependencies = [
 [[package]]
 name = "aps-owners"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "diesel",
@@ -1764,7 +1763,7 @@ dependencies = [
 [[package]]
 name = "aps-packaging_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -1781,7 +1780,7 @@ dependencies = [
 [[package]]
 name = "aps-packaging_procedure_templates"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_compatibility_rules",
  "aps-entities",
@@ -1802,7 +1801,7 @@ dependencies = [
 [[package]]
 name = "aps-packaging_procedures"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_compatibility_rules",
  "aps-assets",
@@ -1826,7 +1825,7 @@ dependencies = [
 [[package]]
 name = "aps-panel_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -1843,7 +1842,7 @@ dependencies = [
 [[package]]
 name = "aps-panels"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-entities",
@@ -1861,7 +1860,7 @@ dependencies = [
 [[package]]
 name = "aps-parent_procedure_templates"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "aps-ownables",
@@ -1876,7 +1875,7 @@ dependencies = [
 [[package]]
 name = "aps-personal_protective_equipment_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -1893,7 +1892,7 @@ dependencies = [
 [[package]]
 name = "aps-personal_protective_equipments"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-entities",
@@ -1911,7 +1910,7 @@ dependencies = [
 [[package]]
 name = "aps-phone_device_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-camera_models",
@@ -1930,7 +1929,7 @@ dependencies = [
 [[package]]
 name = "aps-phone_devices"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-cameras",
@@ -1949,7 +1948,7 @@ dependencies = [
 [[package]]
 name = "aps-photograph_procedure_templates"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-camera_models",
  "aps-digital_asset_models",
@@ -1970,7 +1969,7 @@ dependencies = [
 [[package]]
 name = "aps-photograph_procedures"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-camera_models",
@@ -1996,7 +1995,7 @@ dependencies = [
 [[package]]
 name = "aps-photographs"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-digital_assets",
@@ -2011,20 +2010,9 @@ dependencies = [
 ]
 
 [[package]]
-name = "aps-physical_asset_model_lifecycle_classes"
-version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
-dependencies = [
- "diesel",
- "diesel-builders",
- "serde",
- "validation-errors",
-]
-
-[[package]]
 name = "aps-physical_asset_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -2040,7 +2028,7 @@ dependencies = [
 [[package]]
 name = "aps-physical_assets"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-entities",
@@ -2057,7 +2045,7 @@ dependencies = [
 [[package]]
 name = "aps-pipette_tip_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -2074,7 +2062,7 @@ dependencies = [
 [[package]]
 name = "aps-pipette_tips"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-entities",
@@ -2092,7 +2080,7 @@ dependencies = [
 [[package]]
 name = "aps-pouring_procedure_templates"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "aps-namespaced_ownables",
@@ -2112,7 +2100,7 @@ dependencies = [
 [[package]]
 name = "aps-pouring_procedures"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-entities",
@@ -2136,7 +2124,7 @@ dependencies = [
 [[package]]
 name = "aps-privacy_dependencies"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "diesel",
@@ -2149,7 +2137,7 @@ dependencies = [
 [[package]]
 name = "aps-procedure_asset_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_model_ancestors",
  "aps-asset_models",
@@ -2165,7 +2153,7 @@ dependencies = [
 [[package]]
 name = "aps-procedure_template_asset_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-procedure_templates",
@@ -2179,7 +2167,7 @@ dependencies = [
 [[package]]
 name = "aps-procedure_templates"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "aps-namespaced_ownables",
@@ -2194,7 +2182,7 @@ dependencies = [
 [[package]]
 name = "aps-procedures"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "aps-next_procedure_templates",
@@ -2212,7 +2200,7 @@ dependencies = [
 [[package]]
 name = "aps-reused_procedure_template_asset_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-procedure_template_asset_models",
  "aps-procedure_templates",
@@ -2225,7 +2213,7 @@ dependencies = [
 [[package]]
 name = "aps-roles"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "diesel",
  "diesel-builders",
@@ -2236,7 +2224,7 @@ dependencies = [
 [[package]]
 name = "aps-sample_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -2254,7 +2242,7 @@ dependencies = [
 [[package]]
 name = "aps-sample_source_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -2271,7 +2259,7 @@ dependencies = [
 [[package]]
 name = "aps-sample_sources"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-entities",
@@ -2289,7 +2277,7 @@ dependencies = [
 [[package]]
 name = "aps-samples"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-entities",
@@ -2309,7 +2297,7 @@ dependencies = [
 [[package]]
 name = "aps-storage_procedure_templates"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_compatibility_rules",
  "aps-container_models",
@@ -2330,7 +2318,7 @@ dependencies = [
 [[package]]
 name = "aps-storage_procedures"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_compatibility_rules",
  "aps-assets",
@@ -2355,7 +2343,7 @@ dependencies = [
 [[package]]
 name = "aps-supernatant_procedure_templates"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "aps-namespaced_ownables",
@@ -2375,7 +2363,7 @@ dependencies = [
 [[package]]
 name = "aps-supernatant_procedures"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-entities",
@@ -2399,7 +2387,7 @@ dependencies = [
 [[package]]
 name = "aps-table_names"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "diesel",
  "diesel-builders",
@@ -2410,7 +2398,7 @@ dependencies = [
 [[package]]
 name = "aps-team_members"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-teams",
  "aps-users",
@@ -2423,7 +2411,7 @@ dependencies = [
 [[package]]
 name = "aps-teams"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "aps-ownables",
@@ -2449,7 +2437,7 @@ dependencies = [
 [[package]]
 name = "aps-test-utils"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-container_models",
@@ -2469,7 +2457,7 @@ dependencies = [
 [[package]]
 name = "aps-tombstones"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-table_names",
  "diesel",
@@ -2483,7 +2471,7 @@ dependencies = [
 [[package]]
 name = "aps-traits"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_compatibility_rules",
  "aps-asset_models",
@@ -2507,7 +2495,7 @@ dependencies = [
 [[package]]
 name = "aps-users"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "aps-owners",
@@ -2521,7 +2509,7 @@ dependencies = [
 [[package]]
 name = "aps-volume_measuring_device_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -2538,7 +2526,7 @@ dependencies = [
 [[package]]
 name = "aps-volume_measuring_devices"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-entities",
@@ -2556,7 +2544,7 @@ dependencies = [
 [[package]]
 name = "aps-volumetric_container_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-container_models",
@@ -2574,7 +2562,7 @@ dependencies = [
 [[package]]
 name = "aps-volumetric_containers"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-containers",
@@ -2593,7 +2581,7 @@ dependencies = [
 [[package]]
 name = "aps-weighed_container_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-container_models",
@@ -2611,7 +2599,7 @@ dependencies = [
 [[package]]
 name = "aps-weighing_device_models"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-asset_models",
  "aps-entities",
@@ -2628,7 +2616,7 @@ dependencies = [
 [[package]]
 name = "aps-weighing_devices"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-entities",
@@ -2646,7 +2634,7 @@ dependencies = [
 [[package]]
 name = "aps-weighing_procedure_templates"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-entities",
  "aps-namespaced_ownables",
@@ -2666,7 +2654,7 @@ dependencies = [
 [[package]]
 name = "aps-weighing_procedures"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "aps-assets",
  "aps-entities",
@@ -3477,7 +3465,7 @@ checksum = "9b4f627cb1b25917193a259e49bdad08f671f8d9708acfd5fe0a8c1455d87220"
 [[package]]
 name = "pg2sqlite"
 version = "0.1.0"
-source = "git+https://github.com/LucaCappelletti94/pg2sqlite?branch=main#1bad6310637b3453ed9ac1f37936440d8839128b"
+source = "git+https://github.com/LucaCappelletti94/pg2sqlite?branch=main#a0fe5f7177a314b19f4c70263db3b57e2d3aab54"
 dependencies = [
  "git2",
  "sql-traits",
@@ -3550,7 +3538,7 @@ dependencies = [
 [[package]]
 name = "procedure-like"
 version = "0.1.0"
-source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#6e7da373e204778b2cd06d3b71da93171a31165e"
+source = "git+https://github.com/earth-metabolome-initiative/asset-procedure-schema#ec7e3b631763dc348ccca9717e64879c0ac36691"
 dependencies = [
  "diesel",
  "diesel-builders",

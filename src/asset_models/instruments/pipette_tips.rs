@@ -7,7 +7,6 @@ use aps::aps_ownables::*;
 use aps::aps_pipette_tip_models::*;
 use aps::aps_users::User;
 use aps::aps_users::*;
-use aps_traits::ReusabilityBuilderExt;
 use diesel_builders::{BuilderError, TableBuilder, prelude::*};
 
 /// Returns the 200μl pipette tip model, creating it if it does not exist.
@@ -15,25 +14,14 @@ use diesel_builders::{BuilderError, TableBuilder, prelude::*};
 /// # Example
 ///
 /// ```rust
-/// use aps::aps_physical_asset_models::*;
 /// use aps_test_utils::{aps_git_conn, user};
 /// use aps_templates::prelude::*;
-/// use diesel_builders::get_column::GetColumnExt;
 /// let mut conn = aps_git_conn();
 ///
 /// let test_user = user(&mut conn);
 /// let pipette_tip_200ul_1 = pipette_tip_200ul(&test_user, &mut conn).expect("Failed to create the 200μl pipette tip model");
 /// let pipette_tip_200ul_2 = pipette_tip_200ul(&test_user, &mut conn).expect("Failed to create the 200μl pipette tip model");
 /// assert_eq!(pipette_tip_200ul_1, pipette_tip_200ul_2);
-/// assert_eq!(
-///     pipette_tip_200ul_1.get_column::<physical_asset_models::lifecycle_class_id>(),
-///     "single_use"
-/// );
-/// assert!(
-///     pipette_tip_200ul_1
-///         .get_column::<physical_asset_models::recommended_max_use>()
-///         .is_none()
-/// );
 /// ```
 pub fn pipette_tip_200ul<C>(
     user: &User,
@@ -71,8 +59,6 @@ where
             "A 200μl pipette tip used to manipulate and transfer liquids when adapted to a pipette",
         )
         .expect("Failed to set pipette tip model description")
-        .try_single_use()
-        .expect("Failed to set pipette tip model reusability to single-use")
         .creator_id(user.get_column::<users::id>())
         .editor_id(user.get_column::<users::id>())
         .owner_id(user.get_column::<users::id>())
@@ -85,25 +71,14 @@ where
 /// # Example
 ///
 /// ```rust
-/// use aps::aps_physical_asset_models::*;
 /// use aps_test_utils::{aps_git_conn, user};
 /// use aps_templates::prelude::*;
-/// use diesel_builders::get_column::GetColumnExt;
 /// let mut conn = aps_git_conn();
 ///
 /// let test_user = user(&mut conn);
 /// let pipette_tip_1000ul_1 = pipette_tip_1000ul(&test_user, &mut conn).expect("Failed to create the 1ml pipette tip model");
 /// let pipette_tip_1000ul_2 = pipette_tip_1000ul(&test_user, &mut conn).expect("Failed to create the 1ml pipette tip model");
 /// assert_eq!(pipette_tip_1000ul_1, pipette_tip_1000ul_2);
-/// assert_eq!(
-///     pipette_tip_1000ul_1.get_column::<physical_asset_models::lifecycle_class_id>(),
-///     "single_use"
-/// );
-/// assert!(
-///     pipette_tip_1000ul_1
-///         .get_column::<physical_asset_models::recommended_max_use>()
-///         .is_none()
-/// );
 /// ```
 pub fn pipette_tip_1000ul<C>(
     user: &User,
@@ -141,8 +116,6 @@ where
             "A 1000μl pipette tip used to manipulate and transfer liquids when adapted to a pipette",
         )
         .expect("Failed to set pipette tip model description")
-        .try_single_use()
-        .expect("Failed to set pipette tip model reusability to single-use")
         .creator_id(user.get_column::<users::id>())
         .editor_id(user.get_column::<users::id>())
         .owner_id(user.get_column::<users::id>())
