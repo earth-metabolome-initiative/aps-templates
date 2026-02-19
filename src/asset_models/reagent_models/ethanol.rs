@@ -1,38 +1,46 @@
-//! Submodule defining the functions to initialize `ethanol` asset models.
-use core_structures::{
-    ReagentModel, User,
-    tables::insertables::{AssetModelSettable, ReagentModelSettable},
-};
-use diesel::{OptionalExtension, PgConnection};
-use web_common_traits::database::{DispatchableInsertableVariant, Insertable};
-/// Returns the absolute ethanol reagent.
-///
-/// # Implementation Details
-///
-/// This function either instantiate a new absolute ethanol reagent from
-/// the database or inserts it if it does not exist before returning it.
-///
-/// # Arguments
-///
-/// * `user` - The user for whom the freeze dryer is being created.
-/// * `conn` - The database connection.
-///
-/// # Errors
-///
-/// * If the connection to the database fails.
-pub fn absolute_ethanol(user: &User, conn: &mut PgConnection) -> anyhow::Result<ReagentModel> {
-    let name = "Absolute Ethanol, >= 95%";
+//! Submodule defining functions to initialize `ethanol` reagent models.
 
-    if let Some(existing) = ReagentModel::from_name(name, conn).optional()? {
-        return Ok(existing);
-    }
+use super::reagent_model;
+use aps::aps_namespaced_ownables::*;
+use aps::aps_namespaces::*;
+use aps::aps_physical_asset_models::*;
+use aps::aps_users::User;
+use diesel_builders::{BuilderError, TableBuilder, prelude::*};
 
-    Ok(ReagentModel::new()
-        .name(name)?
-        .description("Absolute Ethanol, >= 95%, with 5% isopropanol")?
-        .purity(95.0)?
-        .cas_code("64-17-5")?
-        .molecular_formula("CH3CH2OH")?
-        .created_by(user)?
-        .insert(user.id, conn)?)
+/// Returns the absolute ethanol reagent model, creating it if it does not
+/// exist.
+///
+/// # Example
+///
+/// ```rust
+/// use aps_test_utils::{aps_git_conn, user};
+/// use aps_templates::prelude::*;
+/// let mut conn = aps_git_conn();
+///
+/// let test_user = user(&mut conn);
+/// let ethanol_model1 =
+///     absolute_ethanol(&test_user, &mut conn).expect("Failed to create ethanol model");
+/// let ethanol_model2 =
+///     absolute_ethanol(&test_user, &mut conn).expect("Failed to create ethanol model");
+/// assert_eq!(ethanol_model1, ethanol_model2);
+/// ```
+pub fn absolute_ethanol<C>(
+    user: &User,
+    conn: &mut C,
+) -> Result<
+    NestedModel<physical_asset_models::table>,
+    BuilderError<validation_errors::ValidationError>,
+>
+where
+    TableBuilder<physical_asset_models::table>: Insert<C>,
+    TableBuilder<namespaces::table>: Insert<C>,
+    (namespaces::name,): LoadNestedFirst<namespaces::table, C>,
+    (
+        namespaced_ownables::namespace_id,
+        (namespaced_ownables::name,),
+    ): LoadNestedFirst<physical_asset_models::table, C>,
+{
+    const ETHANOL_NAME: &str = "Absolute Ethanol, >= 95%";
+    const ETHANOL_DESCRIPTION: &str = "Absolute Ethanol, >= 95%, with 5% isopropanol";
+    reagent_model(user, ETHANOL_NAME, ETHANOL_DESCRIPTION, conn)
 }

@@ -1,38 +1,45 @@
-//! Submodule defining the functions to initialize `formic_acid` asset models.
-use core_structures::{
-    ReagentModel, User,
-    tables::insertables::{AssetModelSettable, ReagentModelSettable},
-};
-use diesel::{OptionalExtension, PgConnection};
-use web_common_traits::database::{DispatchableInsertableVariant, Insertable};
-/// Returns the formic acid reagent.
-///
-/// # Implementation Details
-///
-/// This function either instantiate a new formic acid reagent from
-/// the database or inserts it if it does not exist before returning it.
-///
-/// # Arguments
-///
-/// * `user` - The user for whom the formic acid is being created.
-/// * `conn` - The database connection.
-///
-/// # Errors
-///
-/// * If the connection to the database fails.
-pub fn formic_acid(user: &User, conn: &mut PgConnection) -> anyhow::Result<ReagentModel> {
-    let name = "Formic acid";
+//! Submodule defining functions to initialize `formic_acid` reagent models.
 
-    if let Some(existing) = ReagentModel::from_name(name, conn).optional()? {
-        return Ok(existing);
-    }
+use super::reagent_model;
+use aps::aps_namespaced_ownables::*;
+use aps::aps_namespaces::*;
+use aps::aps_physical_asset_models::*;
+use aps::aps_users::User;
+use diesel_builders::{BuilderError, TableBuilder, prelude::*};
 
-    Ok(ReagentModel::new()
-        .name(name)?
-        .description("Formic acid, pure")?
-        .purity(98.0)?
-        .cas_code("64-18-6")?
-        .molecular_formula("HCOOH")?
-        .created_by(user)?
-        .insert(user.id, conn)?)
+/// Returns the formic acid reagent model, creating it if it does not exist.
+///
+/// # Example
+///
+/// ```rust
+/// use aps_test_utils::{aps_git_conn, user};
+/// use aps_templates::prelude::*;
+/// let mut conn = aps_git_conn();
+///
+/// let test_user = user(&mut conn);
+/// let formic_acid_model1 =
+///     formic_acid(&test_user, &mut conn).expect("Failed to create formic acid model");
+/// let formic_acid_model2 =
+///     formic_acid(&test_user, &mut conn).expect("Failed to create formic acid model");
+/// assert_eq!(formic_acid_model1, formic_acid_model2);
+/// ```
+pub fn formic_acid<C>(
+    user: &User,
+    conn: &mut C,
+) -> Result<
+    NestedModel<physical_asset_models::table>,
+    BuilderError<validation_errors::ValidationError>,
+>
+where
+    TableBuilder<physical_asset_models::table>: Insert<C>,
+    TableBuilder<namespaces::table>: Insert<C>,
+    (namespaces::name,): LoadNestedFirst<namespaces::table, C>,
+    (
+        namespaced_ownables::namespace_id,
+        (namespaced_ownables::name,),
+    ): LoadNestedFirst<physical_asset_models::table, C>,
+{
+    const FORMIC_ACID_NAME: &str = "Formic acid";
+    const FORMIC_ACID_DESCRIPTION: &str = "Formic acid, pure";
+    reagent_model(user, FORMIC_ACID_NAME, FORMIC_ACID_DESCRIPTION, conn)
 }
